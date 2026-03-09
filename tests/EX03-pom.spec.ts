@@ -14,7 +14,7 @@ test('should successfully make an appointment', async ({ page }) => {
     "ThisIsNotAPassword"
   );
 
-  await appointmentPage.fillAppointmentDetails('Hongkong CURA Healthcare Center', '18/8/2027');
+  await appointmentPage.fillAppointmentDetails('Hongkong CURA Healthcare Center', '18/8/2028');
 
   const confirmation = page.locator('h2');
   await expect(confirmation).toHaveText('Appointment Confirmation');
